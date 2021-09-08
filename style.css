@@ -1,0 +1,825 @@
+/* подключение шрифтов через import с сайта */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+
+/* //шрифты  */
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url(../fonts/Gilroy-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold' ;
+  src: url(../fonts/Gilroy-Bold.ttf)
+}
+  
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  background: url(../img/background.jpg);
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+/* общее */
+.container{
+  max-width: 1500px;
+  width: 100%;
+  margin: auto;
+}
+
+/* заголовок */
+.title{
+  font-family: 'Gilroy-Bold';
+  font-size: 48px;
+  line-height: 120%;
+
+}
+.title span{
+  font-family: 'Gilroy-Regular';
+  font-weight: 400;
+}
+.title p{
+  font-family: 'Gilroy-Regular';
+
+}
+
+/* кнопки ---------------------------- */
+
+.button-secondary{
+  background: #FF9900;
+  border-radius: 10px;
+  color:#fff;
+  font-weight: bold;
+}
+.button-primary{
+  position: relative;
+  color: #FFFFFF;
+  font-weight: 700;
+  background: #FF4D00;
+  box-shadow: 0px 0px 20px rgba(255, 76, 0, 0.8);
+  border-radius: 30px;
+}
+.button-primary::before{
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 3px;
+  right: 3px;
+  bottom: 5px;
+  border: 1px solid #fff;
+  width: 98%;
+  height: 86%;
+  border-radius: 30px;
+  margin: auto;
+}
+
+/* нижнее подчеркивание ------------ */
+.underscore{
+  border-bottom:  2px solid #FF9900;
+}
+
+/* коробка с тенями и закруглениями */
+.box-shadow{
+  padding: 17px 20px;
+  background: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+
+/* карточка */
+.card-circle{
+  border-radius:50%;
+}
+
+/* header */
+.header{
+  position: relative;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column; 
+  background: #FFFFFF;
+  padding: 18px 50px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 30px 30px;
+}
+/* верхнее */
+.header-top{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom:2px solid #FF9900;
+}
+.header-logo{
+  /* background:#FF9900; */
+  margin-right: 60px;
+} 
+.contacts{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.contact__link{
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #FF9900;
+}
+.contact__link:last-child{
+  border:none;
+}
+.contact__link img{
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #000000;
+}
+.contact__pickup{
+ padding-right: 6px;
+}
+.contact__delivery , .contact__orders{
+  padding-right: 36px;
+}
+.contact__tel{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 150%;
+}
+/* нижнее  */
+.header-bottom{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding-top: 18px;
+}
+.menu{
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 150%;
+  font-size: 18px;
+}
+.menu .afghan-cauldrons{
+  background: url(../img/header/kazan.svg)no-repeat left;
+  padding-left: 25px;
+}
+/* кнопка с карзиной */
+.button-basket__link{
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 4px 17px;
+  font-size: 18px;
+}
+.button-basket__link::before{
+  position: absolute;
+  content: '1';
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #000;
+  color:#fff;
+  top: -12px;
+  right: -12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+[alt=basket]{
+  margin-left: 15px;
+}
+
+/* promo */
+.sectio-promo{
+  margin-top: 80px;
+  position: relative;
+  padding-bottom: 50px;
+}
+.sectio-promo::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 646px;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+350deg, #FF9900 3.64%, rgba(255, 153, 0, 0) 71.38%);
+  opacity: 0.5;
+}
+.promo{
+  position: relative;
+  z-index: 1000;
+}
+h1{
+  font-family: 'Gilroy-Regular';
+  font-size: 72px;
+  line-height: 150%;
+  font-weight: 700;
+  color: #392219;
+  max-width: 893px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+h1 strong{
+  font-family: 'Gilroy-Regular';
+  font-size: 80px;
+  display: contents;
+  color: #FF9900;
+  text-shadow: 1px 1px 0 #000, 2px 2px 0 #000, 3px 3px 0 #000, 4px 4px 0 #000, 5px 5px 0 #000;
+}
+.promo-text {
+  font-size: 36px;
+  line-height: 150%;
+  margin-bottom: 15px;
+  position: relative;
+}
+.promo-text::before{
+  position: absolute;
+  content:'';
+  background: url(../img/promo/image_60__1_-removebg-preview.png) no-repeat center / 100%;
+  top: -550px;
+  right: 0;
+  width: 760px;
+  height: 820px;
+}
+.refund-money{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+/* коробка с подарком */
+.promo-info{
+  padding:13px 0 48px 39px;
+}
+.promo-get-gift{
+  color: #D39254;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+[alt=gif-box]{
+  margin-left: 20px;
+}
+.box-bonuses{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 750px;
+  font-size: 24px;
+  margin-top: 37px;
+}
+.text-recipes{
+  background: url(../img/promo/open-book.png) no-repeat left;
+  padding-left: 130px;
+}
+.text-discount{
+  background: url(../img/promo/discount.png) no-repeat left;
+  padding-left: 130px;
+  height: 80px;
+}
+.prom__box-buttons{
+  max-width: 895px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.button__get-gift{
+  font-size: 20px;
+  padding: 10px 20px;
+}
+.link-catalog{
+  color: #CD823B;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+
+/* возможности */
+.section-opportunities{
+  background: #fff;
+  padding: 30px 0;
+  margin-bottom: 30px;
+}
+.opportunities{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-start;
+}
+.possibility{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.possibility .possibility-img{
+  font-size: 40px;
+  padding: 25px;
+  border:  2px solid #FF9900;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.payment-method{
+  background: url(../img/opportunities/payment-method.svg) no-repeat center / 50px;
+}
+.cauldron{
+  background: url(../img/opportunities/cauldron.svg) no-repeat center / 50px;
+}
+
+.discount{
+  background: url(../img/opportunities/discount.svg) no-repeat center / 50px;
+}
+.comment{
+  background: url(../img/opportunities/comment.svg) no-repeat center / 50px;
+}
+.possibility p{
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+/* положительные отзывы */
+
+.section-positive-reviews{
+  padding-top: 50px;
+  margin-bottom: 50px;
+  background: #fff;
+  position: relative;
+}
+.section-positive-reviews::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 646px;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(350deg, #FF9900 3.64%, rgba(255, 153, 0, 0) 71.38%);
+  opacity: 0.5;
+}
+.positive-reviews{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 100;
+}
+.positive-reviews__title{
+  margin-left: 350px;
+  margin-bottom: -150px;
+}
+.positive-reviews__info {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 120%;  
+  font-family: 'Gilroy-Regular';
+}
+.positive-reviews__info strong{
+  font-family: 'Gilroy-Bold';
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+
+.positive-reviews__body{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-end;
+}
+/* коробка с мужчиной */
+.positive-reviews__box-man{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 496px;
+  width: 100%;
+  position: relative;
+  background:linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 38.59%), url(../img/positive-reviews/man.png) no-repeat center;
+  height: 745px;
+}
+
+.positive-reviews__box-man .box-man__name{
+  font-family: 'Gilroy-Bold';
+  font-size: 18px;
+  line-height: 120%;
+  padding: 9px 70px;
+  background: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 167px;
+  right: 50px;
+}
+.positive-reviews__box-man .box-man__post{
+  font-family: 'Gilroy-Regular';
+  font-size: 18px;
+  line-height: 120%;
+  padding: 9px 12px;
+  background: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: absolute;
+  bottom: 122px;
+  right: 50px;
+}
+
+/* коробка с карточками */
+.box-positive-reviews__cards{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1090px;
+  margin-top: 30px;
+}
+/* карточка */
+.positive-reviews__card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 330px;
+  min-height: 220px;
+  font-size: 16px;
+  line-height: 120%;
+  margin-bottom: 30px;
+
+  padding: 15px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+/* заголовок в карточке  */
+.positive-reviews__card-title{
+  display: flex;
+  margin-bottom: 10px;
+}
+.positive-reviews__card-title h3{
+  font-size: 17px;
+}
+.positive-reviews__circle{
+  font-size: 40px;
+  padding: 25px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+/* картинки в круге */
+.warranty__circle{
+  background: url(../img/positive-reviews/guarantee.svg) no-repeat center, #FF9900;
+}
+.factory__circle{
+  background: url(../img/positive-reviews/industry.svg) no-repeat center, #FF9900;
+}
+.experts__circle{
+  background: url(../img/positive-reviews/cauldron.svg) no-repeat center, #FF9900;
+}
+.delivery__circle{
+  background: url(../img/positive-reviews/fast-delivery.svg) no-repeat center, #FF9900;
+}
+.payment__circle{
+  background: url(../img/positive-reviews/credit-cards-payment.svg) no-repeat center, #FF9900;
+}
+.discount__circle{
+  background: url(../img/positive-reviews/discount.svg) no-repeat center, #FF9900;
+}
+/* текст в карточке */
+.positive-reviews__card-text{
+  text-align: center;
+  margin-bottom: 10px;
+  max-width: 294px;
+}
+.positive-reviews__card-link{
+  text-decoration-line: underline;
+  color: #FF9900;
+  margin: auto;
+}
+
+
+/* рассрочка */
+.section-installment-plan{
+  background: #fff;
+  padding: 30px 0;
+}
+.installment-plan{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.installment-plan__title{
+  font-family: 'Gilroy-Bold';
+  font-size: 24px;
+  line-height: 120%;
+  background: url(../img/installment-plan/discount.svg) no-repeat left;
+  padding-left: 40px;
+  margin-bottom: 30px;
+}
+.installment-plan__cards{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.installment-plan__card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.installment-plan__card img{
+  margin-bottom: 10px;
+}
+.installment-plan__card strong{
+  font-size: 20px;
+  line-height: 150%;
+}
+.installment-plan__card span{
+  font-size: 20px;
+  line-height: 150%;
+}
+.button__buy-installments{
+  padding: 10px 30px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+
+/* оригинальные  */
+.section-original{
+  margin-top: 82px;
+}
+.original{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.original-title{
+  max-width: 1100px;
+  margin-bottom: 18px;
+}
+
+
+
+/* адоптация */
+@media(max-width:1500px){
+  .container{
+    width: 98%;
+  }
+  /* header */
+  .header{
+    padding: 18px 20px;
+  }
+  .header-logo{
+    margin-right: 20px;
+  }
+  .header-top{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact__delivery, .contact__orders{
+    font-size: 15px;
+    padding-right: 6px;
+  }
+  .contact__tel{
+    font-size: 16px;
+  }
+  .contact__pickup{
+    font-size: 15px;
+  }
+  .header-bottom{
+    align-items: flex-end;
+  }
+  .menu{
+    flex-wrap: wrap;
+  }
+  .menu a{
+    margin:10px 16px;
+  }
+
+  /* промо */
+  h1{
+    font-size: 45px;
+    line-height: 120%;
+    margin-bottom: 20px;
+  }
+  h1 strong{
+    font-size: 60px;
+    line-height: 120%;
+  }
+  .promo-text::before{
+    display: none;
+  }
+  .promo-text {
+    font-size: 30px;
+  }
+
+  /* рассрочка */
+  .possibility .possibility-img{
+    width: 70px;
+    height: 70px;
+  }
+  .possibility p{
+    font-size: 16px;
+  }
+
+  /* положительные отзывы  */
+  .title , .positive-reviews__info strong{
+    font-size: 40px;
+  }
+  .positive-reviews__info{
+    max-width:700px;
+  }
+  .positive-reviews__title{
+    margin: 0;
+  }
+  .positive-reviews__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .positive-reviews__box-man{
+    background: linear-gradient(
+0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 38.59%), url(../img/positive-reviews/man.png) no-repeat top;
+    height: 500px;
+  }
+  .positive-reviews__card{
+    padding: 10px;
+  }
+
+  /* рассрочка */
+  .installment-plan__card{
+    margin: 10px;
+  }
+  
+}
+
+@media(max-width:992px){
+  .contacts{
+    justify-content: center;
+  }
+  .contact__delivery, .contact__orders , .contact__pickup{
+    display: none;
+  }
+  .header-top{
+    border: none;
+  }
+
+  /* promo */
+  h1{
+    font-size: 40px;
+  }
+  h1 strong{
+    font-size: 50px;
+  }
+  .promo-text {
+    font-size: 25px;
+  }
+  .refund-money{
+    font-size: 18px;
+  }
+  .promo-get-gift {
+    font-size: 20px;
+  }
+  .box-bonuses , .prom__box-buttons{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .text-recipes {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  .text-discount{
+    font-size: 22px;
+  }
+  .button__get-gift{
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+/* возможности */
+  .possibility{
+    margin:0 30px;
+  }
+  .possibility p{
+    text-align: center;
+  }
+
+  /* положительные отзывы */
+  .title, .positive-reviews__info strong{
+    font-size: 35px;
+  }
+  .positive-reviews__info{
+    font-size: 25px;
+  }
+
+  /* рассрочка */
+  .installment-plan__cards{
+    flex-wrap: wrap;
+  }
+  .installment-plan__card{
+    margin: 20px;
+  }
+}
+@media(max-width:768px){
+  /* промо */
+  h1 strong{
+    font-size: 40px;
+  }
+  .promo-text{
+    font-size: 20px;
+  }
+  .button__get-gift{
+    font-size: 18px;
+  }
+  /* возможности */
+  .opportunities{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .possibility{
+    margin: 20px 0;
+  }
+
+  /* положительные отзывы */
+  .title, .positive-reviews__info strong{
+    font-size: 30px;
+  }
+  .positive-reviews__info{
+    font-size: 20px;
+  }
+  .box-positive-reviews__cards{
+    justify-content: center;
+  }
+}
+@media(max-width:560px){
+  /* header */
+  .header-bottom{
+    flex-direction: column;
+  }
+  /* промо */
+  h1 strong , h1{
+    font-size: 25px;
+  }
+  .promo-text{
+    font-size: 18px;
+  }
+  .refund-money{
+    font-size: 16px;
+  }
+  .promo-get-gift{
+    font-size: 16px;
+  }
+  .text-discount  , .text-recipes{
+    font-size: 18px;
+  }
+  .button__get-gift{
+    text-align: center;
+    font-size: 15px;
+  }
+  .title, .positive-reviews__info strong{
+    font-size: 24px;
+  }
+  .positive-reviews__info{
+    font-size: 17px;
+  }
+  .installment-plan__title{
+    background: none;
+    font-size: 18px;
+  }
+  .installment-plan__cards{
+    flex-direction: column;
+  }
+  [alt=gif-box]{
+    display: none;
+  }
+  .promo-get-gift {
+    font-size: 18px;
+  }
+}
