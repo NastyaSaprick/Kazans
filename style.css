@@ -19,7 +19,7 @@
 }
 body{
   font-family: 'Montserrat', sans-serif;
-  background: url(/img/background.jpg);
+  background: url(img/background.jpg);
 }
 li{
   list-style: none;
