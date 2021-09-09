@@ -4,12 +4,12 @@
 /* //шрифты  */
 @font-face {
   font-family: 'Gilroy-Regular';
-  src: url(../fonts/Gilroy-Regular.ttf);
+  src: url(../Казан/fonts/Gilroy-Regular.ttf);
 }
 
 @font-face {
   font-family: 'Gilroy-Bold' ;
-  src: url(../fonts/Gilroy-Bold.ttf)
+  src: url(../Казан/fonts/Gilroy-Bold.ttf)
 }
   
 *{
@@ -19,7 +19,7 @@
 }
 body{
   font-family: 'Montserrat', sans-serif;
-  background: url(../img/background.jpg);
+  background: url(../Казан/img/background.jpg);
 }
 li{
   list-style: none;
@@ -175,7 +175,7 @@ a{
   font-size: 18px;
 }
 .menu .afghan-cauldrons{
-  background: url(../img/header/kazan.svg)no-repeat left;
+  background: url(../Казан/img/header/kazan.svg)no-repeat left;
   padding-left: 25px;
 }
 /* кнопка с карзиной */
@@ -251,7 +251,7 @@ h1 strong{
 .promo-text::before{
   position: absolute;
   content:'';
-  background: url(../img/promo/image_60__1_-removebg-preview.png) no-repeat center / 100%;
+  background: url(../Казан/img/promo/image_60__1_-removebg-preview.png) no-repeat center / 100%;
   top: -550px;
   right: 0;
   width: 760px;
@@ -284,11 +284,11 @@ h1 strong{
   margin-top: 37px;
 }
 .text-recipes{
-  background: url(../img/promo/open-book.png) no-repeat left;
+  background: url(../Казан/img/promo/open-book.png) no-repeat left;
   padding-left: 130px;
 }
 .text-discount{
-  background: url(../img/promo/discount.png) no-repeat left;
+  background: url(../Казан/img/promo/discount.png) no-repeat left;
   padding-left: 130px;
   height: 80px;
 }
@@ -339,17 +339,17 @@ h1 strong{
   height: 100px;
 }
 .payment-method{
-  background: url(../img/opportunities/payment-method.svg) no-repeat center / 50px;
+  background: url(../Казан/img/opportunities/payment-method.svg) no-repeat center / 50px;
 }
 .cauldron{
-  background: url(../img/opportunities/cauldron.svg) no-repeat center / 50px;
+  background: url(../Казан/img/opportunities/cauldron.svg) no-repeat center / 50px;
 }
 
 .discount{
-  background: url(../img/opportunities/discount.svg) no-repeat center / 50px;
+  background: url(../Казан/img/opportunities/discount.svg) no-repeat center / 50px;
 }
 .comment{
-  background: url(../img/opportunities/comment.svg) no-repeat center / 50px;
+  background: url(../Казан/img/opportunities/comment.svg) no-repeat center / 50px;
 }
 .possibility p{
   font-size: 24px;
@@ -413,7 +413,7 @@ h1 strong{
   max-width: 496px;
   width: 100%;
   position: relative;
-  background:linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 38.59%), url(../img/positive-reviews/man.png) no-repeat center;
+  background:linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 38.59%), url(../Казан/img/positive-reviews/man.png) no-repeat center;
   height: 745px;
 }
 
@@ -487,22 +487,22 @@ h1 strong{
 }
 /* картинки в круге */
 .warranty__circle{
-  background: url(../img/positive-reviews/guarantee.svg) no-repeat center, #FF9900;
+  background: url(../Казан/img/positive-reviews/guarantee.svg) no-repeat center, #FF9900;
 }
 .factory__circle{
-  background: url(../img/positive-reviews/industry.svg) no-repeat center, #FF9900;
+  background: url(../Казан/img/positive-reviews/industry.svg) no-repeat center, #FF9900;
 }
 .experts__circle{
-  background: url(../img/positive-reviews/cauldron.svg) no-repeat center, #FF9900;
+  background: url(../Казан/img/positive-reviews/cauldron.svg) no-repeat center, #FF9900;
 }
 .delivery__circle{
-  background: url(../img/positive-reviews/fast-delivery.svg) no-repeat center, #FF9900;
+  background: url(../Казан/img/positive-reviews/fast-delivery.svg) no-repeat center, #FF9900;
 }
 .payment__circle{
-  background: url(../img/positive-reviews/credit-cards-payment.svg) no-repeat center, #FF9900;
+  background: url(../Казан/img/positive-reviews/credit-cards-payment.svg) no-repeat center, #FF9900;
 }
 .discount__circle{
-  background: url(../img/positive-reviews/discount.svg) no-repeat center, #FF9900;
+  background: url(../Казан/img/positive-reviews/discount.svg) no-repeat center, #FF9900;
 }
 /* текст в карточке */
 .positive-reviews__card-text{
@@ -532,7 +532,7 @@ h1 strong{
   font-family: 'Gilroy-Bold';
   font-size: 24px;
   line-height: 120%;
-  background: url(../img/installment-plan/discount.svg) no-repeat left;
+  background: url(../Казан/img/installment-plan/discount.svg) no-repeat left;
   padding-left: 40px;
   margin-bottom: 30px;
 }
