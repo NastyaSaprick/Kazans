@@ -4,12 +4,12 @@
 /* //шрифты  */
 @font-face {
   font-family: 'Gilroy-Regular';
-  src: url(../fonts/Gilroy-Regular.ttf);
+  src: url(/../fonts/Gilroy-Regular.ttf);
 }
 
 @font-face {
   font-family: 'Gilroy-Bold' ;
-  src: url(../fonts/Gilroy-Bold.ttf)
+  src: url(/../fonts/Gilroy-Bold.ttf)
 }
   
 *{
@@ -19,7 +19,7 @@
 }
 body{
   font-family: 'Montserrat', sans-serif;
-  background: url(../img/background.jpg);
+  background: url(/../img/background.jpg);
 }
 li{
   list-style: none;
@@ -175,7 +175,7 @@ a{
   font-size: 18px;
 }
 .menu .afghan-cauldrons{
-  background: url(../img/header/kazan.svg)no-repeat left;
+  background: url(/../img/header/kazan.svg)no-repeat left;
   padding-left: 25px;
 }
 /* кнопка с карзиной */
