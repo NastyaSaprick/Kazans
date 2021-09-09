@@ -571,8 +571,8 @@ h1 strong{
 /* оригинальные  */
 .section-original{
   margin-top: 82px;
-  font-family: 'Gilroy-Regular';
-  font-family: 'Gilroy-Bold' ;
+  font-family: 'Gilroy-Bold';
+  margin-bottom: 118px;
 }
 .original{
   display: flex;
@@ -585,9 +585,232 @@ h1 strong{
   margin-bottom: 18px;
 }
 .original p{
-  font-weight: 400;
+  font-family: 'Gilroy-Regular';
+}
+.original-info{
+  margin-bottom: 20px;
   font-size: 18px;
 }
+
+[alt=original-man]{
+  border: 2px solid #FF9900;
+  border-radius:50%;
+}
+.original-manager{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width:455px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.original-manager__post{
+  font-size: 24px;
+  margin-bottom: 9px;
+  margin-left: 34px;
+ 
+}
+.original-manager__feedback{
+  padding: 12px 10px 10px 67px;
+  background: #fff;
+  box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+}
+/* фигура */
+.original-manager__figure{
+  width: 285.5px;
+  height: 56.5px;
+  clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 10% 100%);
+}
+
+/* тело */
+.original__box-body{
+  background: url(img/original/img-34.png) no-repeat center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-start;
+}
+/* коробка с гарантие */
+.warranty-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 560px;
+}
+/* 100% чугун        (левая коробка) */
+.percentage{
+  position: relative;
+  font-size: 36px;
+  text-align: center;
+  max-width:146px;
+  max-height: 146px;
+  background: #fff;
+  border-radius:50%;
+  padding: 30px;
+  border: 2px solid #FF9900;
+}
+.percentage::before{
+  position: absolute;
+  content:'';
+  width: 28px;
+  height: 28px;
+  top: 3px;
+  right: 15px;
+  background: #FF9900;
+  border-radius:50%;
+}
+.percentage::after{
+  position: absolute;
+  content:'';
+  width: 11px;
+  height: 11px;
+  bottom: 3px;
+  right: 5px;
+  background: #FF9900;
+  border-radius:50%;
+}
+.percentage-border{
+  position: relative;
+  max-width: 176px;
+  max-height: 176px;
+  padding: 15px;
+  border: 2px solid #FF9900;
+  border-radius:50%;
+}
+.percentage-border::after{
+  position: absolute;
+  content:'';
+  width: 18px;
+  height: 18px;
+  top: 4px;
+  right: 21px;
+  background: #FF9900;
+  border-radius:50%;
+}
+.percentage-border::before{
+  position: absolute;
+  content:'';
+  width: 11px;
+  height: 11px;
+  top: 28px;
+  left: -9px;
+  background: #FF9900;
+  border-radius:50%;
+}
+
+/* текст к 100% чугун */
+.warranty-box p{
+  max-width: 375px;
+  font-size: 24px;
+  text-align: center;
+}
+
+
+/* ссылки продукции                    (правая коробка) */
+.product-links{
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+/* карточка */
+.product-links__card{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.product-links__card:last-child{
+  margin-bottom: 0;
+}
+.product-links__card img{
+  border: 2px solid #FF9900;
+  border-radius:50%;
+  padding: 10px;
+}
+.product-links__info{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.product-links__info strong{
+  font-size: 24px;
+}
+.product-links__info a{
+  color: #FF9900;
+  font-size: 18px;
+  text-decoration-line: underline;
+  font-family: 'Gilroy-Regular';
+  margin-top: 10px;
+}
+.button__catalog{
+  font-size: 20px;
+  padding: 7px 30px;
+  margin-bottom: 40px;
+}
+.compare__link{
+  color: #FF9900;
+  font-size: 18px;
+  text-decoration-line: underline;
+  font-family: 'Gilroy-Regular';
+  margin-bottom: 70px;
+}
+/* карточка с осторожно */
+.carefully{
+  background: url(img/original/image-38.png) no-repeat top left , #fff ;
+  width: 100%;
+  padding-bottom: 103px;
+}
+.title-color{
+  color: #FF4D00;
+}
+.carefully__title{
+  margin-top: 10px;
+  margin-left: 360px;
+  margin-bottom: 16px;
+  max-width: 992px;
+}
+.carefully__info{
+  max-width: 905px;
+  font-size: 24px;
+  margin-left: 470px;
+  margin-bottom: 143px;
+}
+.carefully__box-footer{
+  display: flex;
+  align-items: flex-end;
+}
+.carefully__box-footer__text{
+  display: flex;
+  flex-direction: column;
+  max-width: 673px;
+}
+.carefully__box-footer__text h3{
+  font-size: 36px;
+  font-family: 'Gilroy-Regular';
+  margin-bottom: 10px;
+}
+.carefully__box-footer__text p {
+  font-size: 18px;
+}
+.coin-box{
+  margin-left: 66px;
+  position: relative;
+}
+.coin-box::before{
+  position: absolute;
+  content:'';
+  background: url(img/original/image-35.png) no-repeat center ;
+  bottom: -100px;
+  right: -412px;
+  width: 312px;
+  height: 295px;
+}
+
+
 
 
 
