@@ -11,7 +11,7 @@
   font-family: 'Gilroy-Bold' ;
   src: url(fonts/Gilroy-Bold.ttf)
 }
-  
+
 *{
   margin: 0;
   padding: 0;
@@ -30,6 +30,10 @@ li{
 a{
   text-decoration: none;
   color: black;
+}
+input{
+  outline: none;
+  border: none;
 }
 /* общее */
 .container{
@@ -107,7 +111,7 @@ a{
 .link{
   color: #FF9900;
   text-decoration: underline;
-  
+
 }
 
 /* header */
@@ -115,7 +119,7 @@ a{
   position: relative;
   z-index: 10000;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   background: #FFFFFF;
   padding: 18px 50px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -133,7 +137,7 @@ a{
 .header-logo{
   /* background:#FF9900; */
   margin-right: 60px;
-} 
+}
 .contacts{
   display: flex;
   justify-content: space-between;
@@ -397,7 +401,7 @@ h1 strong{
 .positive-reviews__info {
   font-weight: normal;
   font-size: 24px;
-  line-height: 120%;  
+  line-height: 120%;
   font-family: 'Gilroy-Regular';
 }
 .positive-reviews__info strong{
@@ -521,7 +525,7 @@ h1 strong{
   max-width: 294px;
 }
 .positive-reviews__card-link{
-  
+
   margin: auto;
 }
 
@@ -617,7 +621,7 @@ h1 strong{
   font-size: 24px;
   margin-bottom: 9px;
   margin-left: 34px;
- 
+
 }
 .original-manager__feedback{
   padding: 12px 10px 10px 67px;
@@ -824,7 +828,6 @@ h1 strong{
   font-size: 48px;
   line-height: 120%;
   padding: 20px 0;
-  text-align: center;
 }
 
 
@@ -910,7 +913,7 @@ h1 strong{
 /* контент */
 .content{
   background: #F8F8F8;
-  border-radius: 10px; 
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -983,6 +986,7 @@ h1 strong{
   border: 1px solid #FF9900;
   box-sizing: border-box;
   border-radius: 10px;
+  align-items: center;
 }
 .price-box strong{
   font-size: 18px;
@@ -1028,38 +1032,977 @@ h1 strong{
   text-align: center;
 }
 
+/* коробка с наборами */
+.section-set{
+  margin-top: -125px;
+  margin-bottom: 80px;
+}
+.box-set{
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px;
+}
+/* левая сторона */
+.box-set .left-side{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 370px;
+  padding-right: 20px;
+  border-right:1px solid #00000067;
+}
+.box-set h3{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.box-set p{
+  font-size: 18px;
+}
+/* правая сторона */
+.box-set .right-side{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 60px;
+}
+.box-set .right-side .row-cards{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+.right-side .row-cards .card-set{
+  max-width: 140px;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+}
+.card-set span{
+  font-size: 14px;
+  margin-top: 10px;
+}
 
 
+/* виды печей */
+.section-kinds{
+  margin-top: 50px;
+  font-family: 'Gilroy-Regular';
+}
+
+.kinds h2{
+  font-family: 'Montserrat', sans-serif;
+  max-width: 767px;
+  margin-bottom: 30px;
+}
+.box-buttons-menu{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.menu-button{
+  position: relative;
+  max-width: 250px;
+  min-height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.menu-button:first-child{
+  max-width: 195px;
+}
+.menu-button::before{
+  position: absolute;
+  content:'';
+  opacity: 0.5;
+  width: 1px;
+  height: 61px;
+  background:#000;
+  top: 20px;
+  right: 0;
+}
+.menu-button span{
+  font-size: 20px;
+  font-family: 'Gilroy-Regular';
+  margin-left: 13px;
+}
+/* коробка с описанием */
+.product-description{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 76px;
+  padding-top: 40px;
+  margin-bottom: 100px;
+}
+/* верхняя часть */
+/* описание */
+.description{
+  display: flex;
+  flex-direction: column;
+  max-width: 717px;
+  width: 100%;
+  justify-content: space-between;
+
+}
+.description-top{
+  display: flex;
+  max-width: 717px;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+.description-info {
+  max-width: 360px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.description-info h3{
+  font-family: 'Gilroy-Bold';
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.description__catalog-content{
+  padding: 20px;
+  padding-left: 35px;
+  width: 100%;
+  max-width: 360px;
+}
+/* различия */
+.differences{
+  max-width: 317px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  border-left: 1px solid #000000;
+}
+.differences span{
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.differences-menu{
+  display: flex;
+  max-width: 200px;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.differences-menu img{
+  margin-right: 20px;
+}
+.differences-menu span{
+  font-size: 24px;
+  display: flex;
+  margin: auto;
+}
+.differences p{
+  font-size: 24px;
+  padding-bottom: 60px;
+}
+/* нижняя часть */
+.description-bottom{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.description__prices-box .price-box{
+  padding: 15px 0;
+}
+.description-discount span , .description-size span{
+  display: flex;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.description-size .size__product__list{
+  background: #FBFBFA;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 24px;
+  padding: 15px;
+  border: none;
+  font-family: 'Gilroy-Bold';
+  max-width: 190px;
+  width: 100%;
+}
+.description .catalog__button-box {
+  padding-top: 60px;
+  margin: auto;
+}
+
+/* причины купить */
+.section-reasons-buy{
+  padding: 50px 0;
+  margin-bottom: 100px;
+}
+.reasons-buy{
+  background: url(img/reasons-buy/image-54.jpg) no-repeat right;
+}
+.reasons-buy h2{
+  margin-bottom: 30px;
+}
+.reasons-buy span{
+  display: flex;
+  max-width: 720px;
+  width: 100%;
+  font-size: 24px;
+  line-height: 150%;
+  margin-bottom: 30px;
+}
+/* карточки  */
+.reasons__cards{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 936px;
+  width: 100%;
+  justify-content: space-between;
+  min-height: 340px;
+  height: 100%;
+}
+/* кккарточка */
+.reasons__card{
+  display: flex;
+}
+.reasons__card-circle{
+  width: 100px;
+  height: 100px;
+  border-radius:50%;
+}
+.img-like{
+  background: url(img/reasons-buy/like.svg) no-repeat center ,  #FF9900;
+}
+.img-fire{
+  background: url(img/reasons-buy/fire.svg) no-repeat center ,  #FF9900;
+}
+.img-future{
+  background: url(img/reasons-buy/future.svg) no-repeat center ,  #FF9900;
+}
+.img-smoke{
+  background: url(img/reasons-buy/smoke.svg) no-repeat center ,  #FF9900;
+}
+.reasons__card-info{
+  max-width: 333px;
+  margin-left: 20px;
+}
+.reasons__card-info strong{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+  margin-bottom: 10px;
+  display: flex;
+}
+.reasons__card-info p{
+  font-size: 18px;
+}
 
 
+/* готовый набор */
+.section__ready-made-set{
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.ready-made-set h2{
+  max-width: 806px;
+  margin-bottom: 50px;
+}
+
+/* промежуток со скидко на аксессуары */
+.gap-discount-accessories{
+  font-size: 44px;
+}
+
+/* аксессуары  */
+.section-accessories{
+  margin: 50px 0 100px 0;
+}
+.accessories-info{
+  font-size: 24px;
+  max-width: 670px;
+  margin: 20px 0 30px;
+}
+.accessories .link{
+  display: block;
+  margin-bottom: 50px;
+}
+.circle__additionally-img{
+  width: 67px;
+  height: 67px;
+  border-radius:50%;
+  padding: 9px;
+  border: 1px solid #FF9900;
+  margin-right: 22px;
+}
+.accessories-img-1{
+  background: url(img/accessories/Ellipse-300.png) no-repeat center ;
+}
+.accessories-img-2{
+  background: url(img/accessories/Ellipse-335.png) no-repeat center ;
+}
+.accessories-img-3{
+  background: url(img/accessories/Ellipse-383.png) no-repeat center ;
+}
+.accessories-img-4{
+  background: url(img/accessories/Ellipse-506.png) no-repeat center ;
+}
+.accessories-img-5{
+  background: url(img/accessories/Ellipse-508.png) no-repeat center ;
+}
+
+.assistant__product__list{
+  font-size: 18px;
+  border: none;
+  font-family: 'Gilroy-Regular';
+  width: 245px;
+  margin-bottom: 12px;
+}
+.characteristic{
+  margin-top: 10px;
+}
+.come-handy{
+  margin-top: 20px;
+}
+.characteristic , .come-handy {
+  position: relative;
+}
+.come-handy::before{
+  position: absolute;
+  content:'';
+  width: 269px;
+  height: 1px;
+  background: #000;
+  bottom: 0;
+  left: -25px;
+}
+.come-handy::after{
+  position: absolute;
+  content:'?';
+  color: #fff;
+  text-align: center;
+  background: #FF9900;
+  width: 20px;
+  height: 20px;
+  border-radius:50%;
+  top: 0;
+  left: -28px;
+}
+.characteristic::after{
+  position: absolute;
+  content:'';
+  background: url(img/accessories/settings.svg) no-repeat center , #FF9900;
+  width: 20px;
+  height: 20px;
+  border-radius:50%;
+  top: 0;
+  left: -28px;
+}
+.catalog-size{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.size__catalog__list{
+  background: #FBFBFA;
+  box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+  border-radius: 10px;
+  font-size: 24px;
+  padding: 15px;
+  border: none;
+  font-family: 'Gilroy-Regular';
+  max-width: 280px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.catalog-size span{
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* отзывы клиентов */
+.section-customer-reviews{
+  padding-bottom: 85px;
+}
+.customer-reviews h2{
+  max-width: 930px;
+  margin-bottom: 50px;
+}
+/* поле с яндекс*/
+.yandex-card{
+  max-width: 720px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.yandex-card-box{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+/* кнопка */
+.customer-reviews-button{
+  padding: 12px 32px;
+  font-size: 24px;
+}
+/* звезды */
+.box-star{
+  margin-bottom: 5px;
+}
+[alt=star]{
+  margin-right: 10px;
+}
+.rating{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 328px;
+}
+.rating p{
+  font-size: 72px;
+  line-height: 150%;
+}
+
+/* отзывы слайдер */
+.section-reviews-slider{
+  padding-bottom: 80px;
+}
+.reviews-slider{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+/* карточка */
+.reviews-card{
+  max-width: 450px;
+  padding: 30px 30px 15px 30px;
+}
+.reviews-card p{
+  max-width: 400px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.reviews-card p a{
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.reviews-box{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.reviews-box-info{
+  display: flex;
+  align-items: center;
+}
+/* круг */
+.reviews-circle{
+  width: 80px;
+  height: 80px;
+  background: #8585CC;
+  color: #fff;
+  font-size: 36px;
+  border-radius:50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+.color-pink{
+  background: rgba(242, 133, 170, 1);
+}
+.color-red{
+  background: #F4511E;
+}
+/* текст */
+.personality{
+  display: flex;
+  flex-direction: column;
+}
+.personality .name{
+  font-size: 24px;
+}
+.personality .date{
+  font-size: 18px;
+  color: #000000;
+  opacity: 0.5;
+}
+/* рецепты */
+.section-recipe{
+  padding-top: 30px;
+  padding-bottom: 190px;
+  background: url(img/recipe/Rectangle-414.jpg) no-repeat center / cover;
+  color: #fff;
+  margin-bottom: 80px;
+}
+.recipe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.recipe h2{
+  max-width: 1170px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.recipe p{
+  max-width: 700px;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 40px;
+}
+.box-recipes{
+  max-width: 450px;
+  padding: 13px 48px;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-recipes strong{
+  font-weight: bold;
+  font-size: 48px;
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 50px;
+}
+.box-recipes span{
+  font-size: 30px;
+}
+
+/*ререгистрация */
+.section-order{
+  background: #fff;
+  padding-top: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding-bottom: 60px;
+}
+.order-input{
+  padding: 11px 0px 12px 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  color: #000000;
+}
+.order h2{
+  margin-bottom: 10px;
+}
+.order p{
+  max-width: 600px;
+  font-size: 24px;
+}
+.order h3{
+  text-align: center;
+  font-size: 24px;
+  margin-top: 30px;
+}
+form{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 53px;
+}
+.order-input__name{
+  width: 330px;
+}
+.order-input__email{
+  width: 570px;
+}
+.order-input__tel{
+  width: 450px;
+}
+.input-button{
+  margin: auto;
+  display: block;
+  font-size: 20px;
+  line-height: 150%;
+  padding: 10px 83px;
+  cursor: pointer;
+}
+
+/* как мы работаем */
+.how-work{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 105px;
+}
+.how-work h2{
+  margin-bottom: 20px;
+}
+.how-work .info{
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+.button__how-work{
+  font-size: 20px;
+  padding: 10px 80px;
+  margin-top: 60px;
+}
+.how-work-cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+.how-work__card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 267px;
+  text-align: center;
+  font-size: 18px;
+}
+.how-work__card::before{
+  position: absolute;
+  content:'';
+  width: 101px;
+  height: 75px;
+  background: url(img/how-work/next.svg) no-repeat center;
+  right: -140px;
+  top: 53px;
+}
+.how-work__card:last-child::before{
+  display: none;
+}
+[alt=how-work-img]{
+  border: 2px solid #FF9900;
+  padding: 25px;
+  border-radius:50%;
+}
+.how-work__card strong{
+  margin: 10px 0;
+}
+/* афганские казаны */
+.section-avgan{
+  background: #fff;
+  padding-top: 100px;
+  padding-bottom: 37px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+.avgan{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.avgan-info{
+  max-width: 750px;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+}
+.avgan-info a{
+  margin-left: 56px;
+}
+.avgan p{
+  font-size: 24px;
+  line-height: 150%;
+  position: relative;
+  padding-left: 28px;
+  margin: 30px 0 50px;
+}
+.avgan p::after{
+  position: absolute;
+  content: '';
+  background: url(img/accessories/settings.svg) no-repeat center , #FF9900;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 5px;
+  left: 0px;
+}
 
 
+/* вопросы */
+.section-questions{
+  margin-top: 100px;
+  margin-bottom: 165px;
+}
+.questions{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.box-question{
+  margin-top: 40px;
+  padding: 30px 50px 50px 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 56px;
+}
+.box-question h3{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.box-question p{
+  padding-bottom: 17px;
+  font-size: 24px;
+}
+.point-1 , .point-2 , .point-3 , .point-4 , .point-5{
+  position: relative;
+}
+.box-question .point-1::after{
+  position: absolute;
+  content: '1';
+  background: #FF9900;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  top: 0px;
+  left: -35px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.box-question .point-2::after{
+  position: absolute;
+  content: '2';
+  background: #FF9900;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  top: 0px;
+  left: -35px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.box-question .point-3::after{
+  position: absolute;
+  content: '3';
+  background: #FF9900;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  top: 0px;
+  left: -35px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.box-question .point-4::after{
+  position: absolute;
+  content: '4';
+  background: #FF9900;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  top: 0px;
+  left: -35px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.box-question .point-5::after{
+  position: absolute;
+  content: '5';
+  background: #FF9900;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  top: 0px;
+  left: -35px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.button__question{
+  position: relative;
+  padding: 10px 27px;
+}
+
+/* общие вопросы коробка */
+.questions-box{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 56px;
+  margin-bottom: 20px;
+}
+.questions-field{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  max-width: 690px;
+  width: 100%;
+  padding: 36px 36px 36px 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.questions-field strong{
+  font-size: 18px;
+  line-height: 150%;
+}
+.questions-field-button{
+  padding: 5px 5px 0 5px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* карта */
+.section-map{
+  background: url(img/map/Rectangle.jpg) no-repeat center;
+  padding: 200px 0;
+}
+.map{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 1170px;
+  width: 100%;
+  padding: 20px 80px 32px 35px;
+  background: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: auto;
+}
+/* вырхняя коробка */
+.map__box-top{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+/* левая  сонтакты */
+.map__box-top__left{
+  max-width: 610px;
+  width: 100%;
+}
+.map__box-top__left h3{
+  font-size: 24px;
+  line-height: 150%;
+}
+.map-contacts{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+.contacts-network__link img{
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+.contacts-network__link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 30px;
+}
+/* правая фото */
+.map__box-top__right h3{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+.map__box-top__right img{
+  margin-right: 10px;
+}
+.map__img{
+  position: relative;
+}
+.map__img::after{
+  position: absolute;
+  content:'';
+  height: 170px;
+  width: 1px;
+  background:#FF9900;
+  top: -20px;
+  left: -30px;
+
+}
+/* соцсети ссылки */
+.social-network{
+  margin-top: 30px;
+  display: flex;
+  max-width: 970px;
+  justify-content: space-between;
+  width: 100%;
+}
+.social-network__link{
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.social-network__link img{
+  padding: 6px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  margin-right: 10px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* footer */
+footer{
+  padding: 25px 0;
+  background: #fff;
+}
+.footer{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.footer-info{
+  display: flex;
+  max-width: 387px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+}
+.footer-logo{
+  margin-right: 10px;
+}
+.footer-nav{
+  font-size: 14px;
+  max-width: 443px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 
 
 /* адоптация */
@@ -1115,7 +2058,6 @@ h1 strong{
   .promo-text {
     font-size: 30px;
   }
-
   /* рассрочка */
   .possibility .possibility-img{
     width: 70px;
@@ -1153,9 +2095,155 @@ h1 strong{
   .installment-plan__card{
     margin: 10px;
   }
-  
+
 }
 @media(max-width:992px){
+  
+  /* промо */
+  h1 strong{
+    font-size: 40px;
+  }
+  .promo-text{
+    font-size: 20px;
+  }
+  .button__get-gift{
+    font-size: 18px;
+  }
+  /* возможности */
+  .opportunities{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .possibility{
+    margin: 20px 0;
+  }
+  .positive-reviews__card{
+    margin: 10px;
+  }
+
+  /* оригинальные чугунные... */
+  .warranty-box{
+    display: none;
+  }
+  /* осторожно */
+  .positive-reviews__info strong{
+    font-size: 18px;
+  }
+  .carefully{
+    background: url(img/original/image-38.png) no-repeat top left / 30% , #fff;
+  }
+  .carefully__info{
+    margin-left: 274px;
+    font-size: 18px;
+  }
+  .coin-box{
+    display: none;
+  }
+  .carefully__box-footer__text h3{
+    font-size: 25px;
+  }
+  /* положительные отзывы */
+
+  .positive-reviews__info{
+    font-size: 20px;
+  }
+  .box-positive-reviews__cards{
+    justify-content: center;
+  }
+  /* промежуток */
+  .gap{
+    font-size: 27px;
+  }
+  /* осторожно */
+  .catalog__box-links{
+    margin-left: 0;
+  }
+  /* с комплектами тожt... */
+  .box-set{
+    flex-direction: column;
+  }
+  .box-set .left-side{
+    border: none;
+    margin-bottom: 20px;
+  }
+  /*  4 причины купить  */
+  .reasons-buy span{
+    font-size: 20px;
+    max-width: 658px;
+  }
+  .reasons__card{
+    margin-bottom: 20px;
+  }
+  /* 482 отзыва */
+  .customer-reviews h2 img{
+    width: 20px;
+  }
+  .customer-reviews-button {
+    font-size: 18px;
+  }
+  /* form */
+  form{
+    flex-direction: column;
+  }
+  form input{
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .order-input__name{
+    width: 400px;
+  }
+  /* как мы работаем */
+  .how-work-cards{
+    flex-wrap: wrap;
+  }
+  
+  .how-work__card::before {
+    display: none;
+  }
+  .how-work__card{
+    margin-bottom: 20px;
+  }
+
+  /* продаем оригинал */
+  .avgan img{
+    width: 300px;
+  }
+  .avgan p{
+    font-size: 20px;
+  }
+  /* рецепьы */
+  .box-recipes{
+    max-width: 335px;
+  }
+  .recipe p{
+    font-size: 18px;
+  }
+  h2{
+    font-size: 25px;
+  }
+  .how-work .info{
+    max-width: 700px;
+  }
+  /* карта */
+  .map__box-top {
+    flex-direction: column;
+  }
+  .map__img::after{
+    display: none;
+  }
+  .social-network__link {
+    font-size: 16px;
+  }
+
+  /* footer */
+  .footer{
+    flex-direction: column;
+  }
+  .footer-nav{
+    margin: 10px 0;
+  }
   .contacts{
     justify-content: center;
   }
@@ -1198,6 +2286,24 @@ h1 strong{
     font-size: 20px;
     margin-bottom: 20px;
   }
+
+  /* подарок */
+  .box-bonuses, .prom__box-buttons , .promo-info {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-bonuses{
+    max-width: 100%;
+  }
+  /* оригинальные чугунные ... */
+  .original__box-body{
+    background: url(img/original/img-34.png) no-repeat right / 50%;
+  }
+  .carefully__info{
+    margin-bottom: 25px;
+  }
+
 /* возможности */
   .possibility{
     margin:0 30px;
@@ -1206,12 +2312,45 @@ h1 strong{
     text-align: center;
   }
 
+  /* ваши комплекты */
+  .right-side .row-cards .card-set{
+    margin: 5px;
+  }
+  .box-set .right-side{
+    margin-left: 10px;
+  }
+  .box-set p{
+    font-size: 16px;
+  }
+  .box-set h3 {
+    font-size: 20px;
+  }
+  /* промежуток */
+  .gap{
+    font-size: 30px;
+  }
   /* положительные отзывы */
   .title, .positive-reviews__info strong{
     font-size: 35px;
   }
   .positive-reviews__info{
     font-size: 25px;
+  }
+
+  /* 6 видов  */
+  .menu-button{
+    flex-direction: column;
+  }
+  .differences p {
+    font-size: 18px;
+  }
+
+  /* 4 причины купить */
+  .section-reasons-buy{
+    padding: 50px 10px;
+  }
+  .reasons-buy {
+    background: url(img/reasons-buy/image-54.jpg) no-repeat right top / 20%;
   }
 
   /* рассрочка */
@@ -1221,40 +2360,79 @@ h1 strong{
   .installment-plan__card{
     margin: 20px;
   }
-}
-@media(max-width:768px){
-  /* промо */
-  h1 strong{
-    font-size: 40px;
+  /* карточки */
+  .catalog__cards{
+    justify-content: space-around;
   }
-  .promo-text{
-    font-size: 20px;
-  }
-  .button__get-gift{
-    font-size: 18px;
-  }
-  /* возможности */
-  .opportunities{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .possibility{
-    margin: 20px 0;
-  }
-
-  /* положительные отзывы */
   .title, .positive-reviews__info strong{
     font-size: 30px;
   }
-  .positive-reviews__info{
+
+  /* карточки в отзывах */
+  .reviews-card p {
+    font-size: 15px;
+  }
+  .reviews-box{
+    flex-direction: column;
+  }
+  .reviews-box-info{
+    margin-bottom: 10px;
+  }
+  .reviews-card{
+    padding: 10px;
+    max-width: 315px;
+  }
+
+  /* 964 + рецепты */
+  .box-recipes strong{
+    font-size: 38px;
+  }
+
+  /* форма */
+  form input{
+    max-width: 300px;
+  }
+
+  /* как мы работаем */
+  .how-work .info{
     font-size: 20px;
   }
-  .box-positive-reviews__cards{
-    justify-content: center;
+
+  .coin-box::before{
+    display: none;
   }
+  /* как мы работаем */
+  .how-work__card::before{
+    background: url(img/how-work/next.svg) no-repeat center / 40%;
+    margin-right: 90px;
+  }
+  .how-work__card p{
+    font-size: 16px;
+  }
+  /* частые вопросы */
+  .box-question p{
+    font-size: 20px;
+  }
+  /* map */
+  .map{
+    padding: 10px 20px;
+  }
+  .map__box-top__left h3 , .map__box-top__right h3{
+    font-size: 18px;
+  }
+  .contacts-network__link{
+    font-size: 16px;
+  }
+  .map__box-top__left{
+    max-width: 470px;
+  }
+  /* footer */
+  .footer-nav{
+    max-width: 370px;
+  }
+
 }
-@media(max-width:560px){
+@media(max-width:768px){
   /* header */
   .header-bottom{
     flex-direction: column;
@@ -1297,5 +2475,164 @@ h1 strong{
   }
   .promo-get-gift {
     font-size: 18px;
+  }
+
+  .original__box-body{
+    background: none;
+  }
+  .original__box-body{
+    margin-bottom: 20px;
+  }
+  /* осторожно */
+  .carefully__title{
+    margin-left: 160px;
+  }
+  .carefully__info{
+    margin-left: 0;
+  }
+  .link{
+    font-size: 18px;
+  }
+  /* с комплектом тоже.. */
+  .box-set .right-side .row-cards{
+    flex-wrap: wrap;
+  }
+
+  /* 6 видов */
+  .section-kinds{
+    display: none;
+  }
+  /* 4 причины */
+  .reasons-buy{
+    background: none;
+  }
+
+  /* как мы работаем */
+  .button__how-work{
+    font-size: 17px;
+  }
+  .title{
+    font-size: 20px;
+  }
+  /* карта */
+  .social-network{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .box-question p{
+    font-size: 17px;
+  }
+  .gap{
+    font-size: 24px;
+  }
+  .possibility{
+    margin-bottom: 20px;
+  }
+}
+
+@media(max-width:560px){
+  
+  /* промо */
+  .promo-info{
+    padding: 10px;
+  }
+  .original-manager{
+    display: none;
+  }
+  .product-links__info strong {
+    font-size: 19px;
+  }
+  .carefully{
+    background: #fff;
+    padding-bottom: 50px;
+  }
+  .carefully__title{
+    margin: 0;
+  }
+  .carefully__box-footer__text h3{
+    font-size: 20px;
+  }
+  .gap{
+    font-size: 20px;
+  }
+  .circle__family-img{
+    display: none;
+  }
+  .subdirectory-box{
+    font-size: 20px;
+  }
+  .reasons__card-circle{
+    display: none;
+  }
+  .accessories-info{
+    font-size: 18px;
+  }
+  .text-crossed::before{
+    width: 50%;
+  }
+  .yandex-card{
+    display: none;
+  }
+  .section-customer-reviews{
+    padding-bottom: 0;
+  }
+  .box-recipes strong , .box-recipes span {
+    font-size: 24px;
+  }
+  .box-recipes{
+    width: 270px;
+  }
+  .order h3 {
+    font-size: 17px;
+  }
+  .input-button , .button__how-work{
+    font-size: 15px;
+    padding: 10px 15px;
+  }
+  .button__how-work{
+    font-size: 13px;
+  }
+  .avgan img{
+    display: none;
+  }
+  .section-avgan{
+    padding-top: 30px;
+  }
+  .avgan-info a{
+    margin-left: 20px;
+  }
+  .box-question p{
+    font-size: 15px;
+  }
+  .box-question .point-5::after , .box-question .point-4::after , .box-question .point-3::after , .box-question .point-2::after , .box-question .point-1::after{
+    width: 15px;
+    height: 15px;
+    top: 0px;
+    left: -22px;
+    font-size: 13px;
+  }
+  .questions-field strong {
+    font-size: 15px;
+  }
+  .section-map{
+    padding-top: 50px;
+  }
+  .questions-field{
+    padding: 10px 20px;
+  }
+  .map__box-top__right{
+    display: none;
+  }
+  .map-contacts{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .map__box-top__left h3{
+    text-align: center;
+  }
+  .footer-nav{
+    flex-direction: column;
+    text-align: center;
   }
 }
